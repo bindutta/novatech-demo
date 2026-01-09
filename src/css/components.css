@@ -35,6 +35,10 @@
 /* ===================
    Navigation
    =================== */
+.nav {
+  position: relative;
+}
+
 .nav__menu {
   display: flex;
   gap: var(--spacing-6);
@@ -107,8 +111,7 @@
   }
 
   .nav__menu.is-open {
-    /*display: flex;*/
-    display: none;  /* BUG: menu never shows */
+    display: flex;
   }
 
   .nav__item {
