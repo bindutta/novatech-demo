@@ -58,5 +58,20 @@
         ]
       }
     ]
+  },
+
+  "permissions": {
+    "allow": [
+      "Bash(npm test)",
+      "Bash(npm run lint)",
+      "Bash(git status)",
+      "Bash(git diff:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(curl:*)",
+      "Edit(*.env)"
+    ]
   }
 }
+
